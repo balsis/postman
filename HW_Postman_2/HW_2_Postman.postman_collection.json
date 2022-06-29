@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "ea4d7437-d1d4-4da4-99e3-edd8d74f1e75",
+		"name": "HW_2_Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20779830"
+	},
+	"item": [
+		{
+			"name": "first",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Проверить, что в body приходит правильный string.\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/first",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_info_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//3. Спарсить response body в json.\r",
+							"let jsonData = pm.response.json(); \r",
+							"//4. Проверить, что name в ответе равно name s request (name вбить руками.)\r",
+							"pm.test(\"Check name\", function () {\r",
+							"    pm.expect(jsonData.name).to.eql(request.data.name);  \r",
+							"});\r",
+							"//5. Проверить, что age в ответе равно age s request (age вбить руками.)\r",
+							"pm.test(\"Check age\", function () {\r",
+							"    pm.expect(jsonData.age).to.eql(request.data.age);  \r",
+							"});\r",
+							"//6. Проверить, что salary в ответе равно salary s request (salary вбить руками.)\r",
+							"pm.test(\"Check salary\", function () {\r",
+							"    pm.expect(String(jsonData.salary)).to.eql(request.data.salary);  \r",
+							"});\r",
+							"//7. Спарсить request.\r",
+							"let req = request.data\r",
+							"//8. Проверить, что name в ответе равно name s request (name вбить руками.)\r",
+							"pm.test(\"Check name\", function () {\r",
+							"    pm.expect(jsonData.name).to.eql(req.name);  \r",
+							"});\r",
+							"//9. Проверить, что age в ответе равно age s request (age вбить руками.)\r",
+							"pm.test(\"Check age\", function () {\r",
+							"    pm.expect(jsonData.age).to.eql(req.age);  \r",
+							"});\r",
+							"//10. Проверить, что salary в ответе равно salary s request (salary вбить руками.)\r",
+							"pm.test(\"Check salary\", function () {\r",
+							"    pm.expect(String(jsonData.salary)).to.eql(req.salary);  \r",
+							"});\r",
+							"//11. Вывести в консоль параметр family из response\r",
+							"console.log(jsonData.family)\r",
+							"//12. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)\r",
+							"pm.test(\"Check 1.5_year_salary \", function () {\r",
+							"    pm.expect(jsonData.family.u_salary_1_5_year).to.eql(req.salary*4);\r",
+							"});\r",
+							"console.log(`Resp: ${jsonData.family.u_salary_1_5_year}$; Req: ${req.salary*4}$`)\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Art",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
