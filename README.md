@@ -54,7 +54,7 @@ response:
 
 ==================
 
-EP_4
+4. **Endpoint_4**
 Method: GET
 EndPoint: /object_info_2
 request url params: 
@@ -76,7 +76,7 @@ response:
 ```
 ==================
 
-EP_5
+5. **Endpoint_5**
 Method: GET
 EndPoint: /object_info_3
 request url params: 
@@ -99,7 +99,7 @@ response:
 
 ==================
 
-EP_6
+6. **Endpoint_6**
 Method: GET
 EndPoint: /object_info_4
 request url params: 
@@ -115,7 +115,7 @@ response:
 ```
 ==================
 
-EP_7
+7. **Endpoint_7**
 Method: POST
 EndPoint: /user_info_2
 request form data: 
