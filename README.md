@@ -1,6 +1,6 @@
 
 <details>
-  <summary>Создание запросов в Postman HW1 </summary>
+  <summary>Создание запросов в Postman</summary>
 Server: http://162.55.220.72:5005   
 
 1. **Endpoint_1**
