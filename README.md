@@ -218,3 +218,11 @@ response:
 20. Проверить, что что параметр u_age равен age из request (age забрать из request.)
 21. Проверить, что параметр u_salary_5_years равен salary*4.2 из request (salary забрать из request.)
 22. ***Написать цикл который выведет в консоль по порядку элементы списка из параметра person.
+</details>  
+
+
+<details>
+  <summary>Google Maps API - условия вызова запроса и перенаправления на другой запрос</summary>
+  ![image](https://user-images.githubusercontent.com/69423332/184939956-e5122405-873a-4405-9c83-cc91d7fe9c1b.png)
+
+</details>  
