@@ -1,6 +1,6 @@
 
 <details>
-  <summary>Создание запросов в Postman</summary>
+  <summary>Создание запросов в Postman- HW_1</summary>
 Server: http://162.55.220.72:5005   
 
 1. **Endpoint_1**
@@ -137,7 +137,7 @@ response:
 </details>      
 
 <details>
-  <summary>Простые автотесты в Postman</summary>
+  <summary>Простые автотесты в Postman - HW_2</summary>
 
 * endpoint: http://162.55.220.72:5005/first
 1. Отправить запрос.
