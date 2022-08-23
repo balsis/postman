@@ -220,7 +220,9 @@ response:
 22. ***Написать цикл который выведет в консоль по порядку элементы списка из параметра person.
 </details>  
 
-
+<details>
+  <summary>Автотесты в Postman - HW_3</summary>
+</details>  
 <details>
   <summary>Google Maps API - условия вызова запроса и перенаправления на другой запрос</summary>
   
